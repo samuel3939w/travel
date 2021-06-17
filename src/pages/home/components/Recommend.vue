@@ -4,7 +4,7 @@
     <ul>
       <li
         class="border-bottom item"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <img class="item-img" :src="item.imgUrl" />
@@ -21,33 +21,9 @@
 <script>
 export default {
   name: "HomeRecommend",
-  data() {
-    return {
-      recommendList: [
-        {
-          id: "0001",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_140x140_73fda71d.jpg",
-          title: "大連勝雅海洋世界",
-          desc: "浪漫大連首站, 浪漫的海洋主題樂園",
-        },
-        {
-          id: "0002",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_140x140_73fda71d.jpg",
-          title: "大連勝雅海洋世界",
-          desc: "浪漫大連首站, 浪漫的海洋主題樂園",
-        },
-        {
-          id: "0003",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_140x140_73fda71d.jpg",
-          title: "大連勝雅海洋世界",
-          desc: "浪漫大連首站, 浪漫的海洋主題樂園",
-        },
-      ],
-    };
-  },
+  props:{
+    list:Array
+  }
 };
 </script>
 

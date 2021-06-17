@@ -4,7 +4,7 @@
     <ul>
       <li
         class="border-bottom item"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -22,34 +22,10 @@
 
 <script>
 export default {
-  name: "HomeRecommend",
-  data() {
-    return {
-      recommendList: [
-        {
-          id: "0001",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/source/1505/9f/f585152825459.jpg_r_640x214_5d46e4cc.jpg",
-          title: "大連勝雅海洋世界",
-          desc: "浪漫大連首站, 浪漫的海洋主題樂園",
-        },
-        {
-          id: "0002",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/source/1505/9f/f585152825459.jpg_r_640x214_5d46e4cc.jpg",
-          title: "大連勝雅海洋世界",
-          desc: "浪漫大連首站, 浪漫的海洋主題樂園",
-        },
-        {
-          id: "0003",
-          imgUrl:
-            "http://img1.qunarzz.com/sight/source/1505/9f/f585152825459.jpg_r_640x214_5d46e4cc.jpg",
-          title: "大連勝雅海洋世界",
-          desc: "浪漫大連首站, 浪漫的海洋主題樂園",
-        },
-      ],
-    };
-  },
+  name: "HomeWeekend",
+  props:{
+    list:Array
+  }
 };
 </script>
 
@@ -57,7 +33,6 @@ export default {
 @import "~styles/mixins.scss";
 
 .title {
-  margin-top: 0.2rem;
   line-height: 0.8rem;
   background: #eee;
   text-indent: 0.2rem;
@@ -66,7 +41,7 @@ export default {
   &-img-wrapper{
       overflow: hidden;
       height: 0;
-      padding-bottom: 33.9%;
+      padding-bottom: 37.9%;
   }
   &-img {
     width: 100%;
