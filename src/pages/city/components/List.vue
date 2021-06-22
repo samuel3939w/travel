@@ -7,15 +7,6 @@
           <div class="button-wrapper">
             <div class="button">台北</div>
           </div>
-          <div class="button-wrapper">
-            <div class="button">台北</div>
-          </div>
-          <div class="button-wrapper">
-            <div class="button">台北</div>
-          </div>
-          <div class="button-wrapper">
-            <div class="button">台北</div>
-          </div>
         </div>
       </div>
       <div class="area">
