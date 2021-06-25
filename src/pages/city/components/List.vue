@@ -67,7 +67,7 @@ export default {
   },
   updated() {
     if (this.scroll) {
-      this.scroll.refresh();
+       this.scroll.refresh();
     }
   },
   watch: {

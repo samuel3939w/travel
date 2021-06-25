@@ -2,10 +2,12 @@
   <div>
     <div class="title">熱銷推薦</div>
     <ul>
-      <li
+      <router-link
+        tag="li"
         class="border-bottom item"
         v-for="item of list"
         :key="item.id"
+        :to="`/detail/${item.id}`"
       >
         <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
@@ -13,7 +15,7 @@
           <p class="item-desc">{{ item.desc }}</p>
           <button class="item-button">查看詳情</button>
         </div>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -21,9 +23,9 @@
 <script>
 export default {
   name: "HomeRecommend",
-  props:{
-    list:Array
-  }
+  props: {
+    list: Array,
+  },
 };
 </script>
 
