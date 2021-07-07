@@ -68,7 +68,7 @@ export default {
     bottom: 0;
     line-height: 0.6rem;
     color: #fff;
-    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
     &-title {
       flex: 1;
       font-size: 0.32rem;
